@@ -120,8 +120,8 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 
 #Acknowledgement
-*Inspire by Instagram Team that reinvent their 3D Touch from iOS to something similar in Anroid
-*Thank to `wasasbeef` for Blurry [https://github.com/wasabeef/Blurry](https://github.com/wasabeef/Blurry)
+* Inspire by Instagram Team that reinvent their 3D Touch from iOS to something similar in Android
+* Thank to `wasasbeef` for Blurry [https://github.com/wasabeef/Blurry](https://github.com/wasabeef/Blurry) 
 
 #License
 ```
