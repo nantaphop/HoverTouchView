@@ -22,6 +22,17 @@ Stimulate Apple's Force Touch or 3D Touch on Android App with Hover Gesture
     compile 'com.nantaphop:hoverTouchView:0.1'
   }
 ```
+Enable Renderscript for blur effect
+```
+android {
+    ...
+    defaultConfig {
+        ...
+        renderscriptTargetApi 20
+        renderscriptSupportModeEnabled true
+    }
+}
+```
 
 #Usage
 This library work as a util class that call `setOnTouchListener(...)` to the view that you want user to hold a finger to see more information.
