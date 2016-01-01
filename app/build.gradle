@@ -23,9 +23,15 @@ android {
         exclude 'lib/armeabi-v7a/librsjni.so'
     }
 }
-
+repositories {
+    maven {
+        url 'https://dl.bintray.com/nantaphop/maven/'
+    }
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
-    compile project(':hoverTouchView')
+    compile 'com.nantaphop:hoverTouchView:0.1'
+//    compile project(':hoverTouchView')
+
 }
