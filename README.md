@@ -1,6 +1,8 @@
 # HoverTouchView
 Stimulate Apple's Force Touch or 3D Touch on Android App with Hover Gesture
 
+NOTED: Hover in this case is gesture that user hold a touch in the view. This Lib implemented by `View.OnTouchListener`,  `MotionEvent.ACTION_DOWN` and `MotionEvent.ACTION_UP`
+
 ![Hover Touch Gif](https://media.giphy.com/media/xT77Ybv4VQzCYTJJAc/giphy.gif)
 [Watch in Youtube Click Here!](https://www.youtube.com/watch?v=Ov4fkrCIuk4&feature=youtu.be)
 
