@@ -6,18 +6,18 @@ NOTED: Hover in this case is gesture that user hold a touch in the view. This Li
 ![Hover Touch Gif](https://media.giphy.com/media/xT77Ybv4VQzCYTJJAc/giphy.gif)
 [Watch in Youtube Click Here!](https://www.youtube.com/watch?v=Ov4fkrCIuk4&feature=youtu.be)
 
-#Welcome for Pull Request 
+# Welcome for Pull Request 
 
-#Features
+# Features
 * Allow Custom View as a Hover View
 * Built-in Blur Effect on Backgroud
 * Config for Animation Duration
 * Provide `onStartHover()` and `onStopHover()` for flexibility
 
-#Limitation
+# Limitation
 * Root View Must Be `FrameLayout`(Because Hover View will add as a child in `FrameLayout`)
 
-#Setup
+# Setup
 **Gradle (jCenter)**
 ```
   dependencies {
@@ -36,7 +36,7 @@ android {
 }
 ```
 
-#Usage
+# Usage
 This library work as a util class that call `setOnTouchListener(...)` to the view that you want user to hold a finger to see more information.
 Basically, I provided `HoverTouchAble` interface that you have to implement on your Custom View Class that act as a hover area such as Thumbnail, List Item, Cover Image
 ```
@@ -52,8 +52,8 @@ Then use helper class to initial hover view
 MyThumbnail pic1 = (MyThumbnail) findViewById(R.id.pic1);
 HoverTouchHelper.make(root, pic1);
 ```
-###Example
-####Custom Image View as Thumbnail
+### Example
+#### Custom Image View as Thumbnail
 ```
 public class MyThumbnail extends ImageView implements HoverTouchAble {
   ...
@@ -79,7 +79,7 @@ public class MyThumbnail extends ImageView implements HoverTouchAble {
     }
 }
 ```
-####Create Your Custom View that show when user hover
+#### Create Your Custom View that show when user hover
 ```
 public class MyThumbnailExpand extends LinearLayout {
   ...
@@ -101,7 +101,7 @@ public class MyThumbnailExpand extends LinearLayout {
 }
 ```
 
-####Your Hover Able View must place in FrameLayout
+#### Your Hover Able View must place in FrameLayout
 ```
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root"
@@ -115,7 +115,7 @@ public class MyThumbnailExpand extends LinearLayout {
     ...
 </FrameLayout>
 ```
-####Then, Use `HoverTouchHelper` to initial your hover view
+#### Then, Use `HoverTouchHelper` to initial your hover view
 ```
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -132,11 +132,11 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-#Acknowledgement
+# Acknowledgement
 * Inspire by Instagram Team that reinvent their 3D Touch from iOS to something similar in Android
 * Thank to `wasasbeef` for Blurry [https://github.com/wasabeef/Blurry](https://github.com/wasabeef/Blurry) 
 
-#License
+# License
 ```
 Copyright 2016 Nantaphop Phuengphae
 
